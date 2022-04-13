@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE CYCLE METHODS</title>
+</head>
+<body>
+    
+    <h1>Life Cycle Methods:</h1>
+
+
+    <h2> Life cycle of a Component has three phases:</h2>
+    <h3>Mounting Phase</h3>
+    <h3>Updating Phase</h3>
+    <h3>Unmounting Phase</h3>
+
+    <h5>Each phase will have methods which are invoked in a sequential manner</h5>
+
+    <h1>Mounting phase:</h1>
+    <h3>1. Constructor:</h3>
+    <p>Constructor is a special type of function which is invoked at the moment when component is created.</p>
+    <p>Constructor is used to initialise the state variables</p>
+    <h3>2.Static getderived state from props:</h3>
+    <p>This method is invoked to return a object for updating the state or return null to update nothing.</p>
+    <h3>3.Render:</h3>
+    <p>This method is invoked to return the JSX</p>
+    <h3>4.Componentdidmount:</h3>
+    <p>Componentdidmount is invoked when the component is successfully inserted in the dom.</p>
+    <br/>
+    <h1>Updating phase:</h1>
+    <h3>1.Static getderived state from props:</h3>
+    <p>This method is invoked to return a object for updating the state or return null to update nothing.</p>
+    <h3>2.shouldComponetupdate:</h3>
+    <p>This method is invoked before Render</p>
+    <h3>3.Render:</h3>
+    <p>This method is invoked to return the JSX</p>
+    <h3>4.getSnapShotbeforeupdate:</h3>
+    <p>This method is invoked to capture the component's information before it gets updated</p>
+    <h3>5.Componentdidupdate</h3>
+    <p>Componentdidupdate is invoked when the component is successfully updated</p>
+        
+        <br/>
+
+        <h1>Unmounting Phase:</h1>
+        <h3>Componentwillunmount:</h3>
+        <p>Componentwillunmount is invoked when the componet is removed from the dom.</p>
+
+</body>
+</html>
